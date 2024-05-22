@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom"; // Correctly import Link from react-router-dom
+
 import React from "react";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 import { cn } from "../utils/cn";
 
-function Navbar({ className }) { // Remove TypeScript type annotations
+function Navbar({ className }) { 
   const socials = [
     {
-      link: "https://www.linkedin.com/in/karan-ranesha-895428221/", // Add appropriate link
+      link: "https://www.linkedin.com/in/karan-ranesha-895428221/", 
       label: "Linkedin",
       Icon: SiLinkedin,
     },
     {
-      link: "https://github.com/Ace10079", // Add appropriate link
+      link: "https://github.com/Ace10079",
       label: "GitHub",
       Icon: SiGithub,
     },
     {
-      link: "https://x.com/karan693702441", // Add appropriate link
+      link: "https://x.com/karan693702441",
       label: "X",
       Icon: SiX,
     },

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden ">
       <div className=" dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2]   relative">
-        <div className="max-w-7xl mx-20 p-5">
+        <div className="max-w-7xl lg:mx-20 p-5">
           <Navbar />
           <Hero />
         </div>
