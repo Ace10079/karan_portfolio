@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/moving-border";
+import Title from "./Title";
 
 function Hero() {
   return (
@@ -15,11 +16,9 @@ function Hero() {
           }
         </p>
         <a href="mailto:minions10karan@gmail.com" className="inline-block">
-          <div>
-            <h1 className="text-3xl font-bold hover:text-green-400">Contact Me</h1>
-            <div className="w-40 h-2 bg-green-500 rounded-full translate-x-2"></div>
-            <div className="w-40 h-2 bg-indigo-500 rounded-full"></div>
-          </div>
+         <Title
+         text='Contact Me'
+         />
         </a>
       </div>
       <div className="relative">

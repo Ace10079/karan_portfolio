@@ -1,27 +1,29 @@
-import { Link } from "react-router-dom"; // Correctly import Link from next/link
+import { Link } from "react-router-dom"; // Correctly import Link from react-router-dom
 import React from "react";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { cn } from "../utils/cn";
 
-function Navbar() {
+function Navbar({ className }) { // Remove TypeScript type annotations
   const socials = [
     {
-      link: "", // Add appropriate link
+      link: "https://www.linkedin.com/in/karan-ranesha-895428221/", // Add appropriate link
       label: "Linkedin",
       Icon: SiLinkedin,
     },
     {
-      link: "", // Add appropriate link
+      link: "https://github.com/Ace10079", // Add appropriate link
       label: "GitHub",
       Icon: SiGithub,
     },
     {
-      link: "", // Add appropriate link
+      link: "https://x.com/karan693702441", // Add appropriate link
       label: "X",
       Icon: SiX,
     },
   ];
+
   return (
-    <nav className="py-10 flex justify-between items-center">
+    <nav className={cn("py-10 flex justify-between items-center", className)}>
       <h1 className="text-2xl font-bold underline underline-offset-8 decoration-red-500 -rotate-2">
         Karan Ranesha
       </h1>
@@ -35,7 +37,7 @@ function Navbar() {
             rel="noopener noreferrer"
             className="text-2xl"
           >
-            <social.Icon className="w-5 h-5 hover:scale-125 transition-all"/>
+            <social.Icon className="w-5 h-5 hover:scale-125 transition-all" />
           </a>
         ))}
       </div>

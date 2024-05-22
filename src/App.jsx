@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -13,7 +15,11 @@ function App() {
         </div>
       </div>
       <div className="h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full"></div>
-      <div className="max-w-7xl mx-20 p-5"><Skills/></div>
+      <div className="max-w-7xl mx-20 p-5 mt-20"><Skills/>
+      <Projects/>
+      <Footer/>
+      </div>
+
     </div>
   );
 }
