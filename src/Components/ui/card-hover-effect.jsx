@@ -8,7 +8,7 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-2 lg:grid-cols-3 py-10 gap-4", // added gap for better spacing
         className
       )}
     >
@@ -39,9 +39,11 @@ export const HoverEffect = ({ items, className }) => {
               )}
             </AnimatePresence>
             <div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500 cursor-pointer">
-              <div className="py-10 z-50 relative space-y-5">
+              <div className="flex flex-col items-center justify-center py-10 space-y-3 z-50 relative">
                 <Icon className="w-8 h-8 mx-auto" />
-                <p className="text-2xl font-bold text-center text-gray-400">{item.text}</p>
+                <p className="text-sm lg:text-2xl font-bold text-center text-gray-400">
+                  {item.text}
+                </p>
               </div>
             </div>
           </div>
