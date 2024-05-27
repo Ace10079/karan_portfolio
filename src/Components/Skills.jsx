@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from './Title';
+
 import { HoverEffect } from './ui/card-hover-effect';
 import {
   SiReact,
@@ -15,6 +16,8 @@ import {
   SiExpress,
   Si1Password
 } from 'react-icons/si';
+import Java from './Java';
+
 
 function Skills() {
   const skills = [
@@ -28,7 +31,7 @@ function Skills() {
     },
     {
       text: "Java",
-      Icon: Si1Password,
+      Icon: Java,
     },
     {
       text: "Python",
