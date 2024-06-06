@@ -16,3 +16,39 @@ body{
     box-shadow: 0 0 200px 130px #c026d3; /* outer cyan */
   
 }
+.moving-border {
+  position: relative;
+  border-radius: 15px;
+  padding: 2px; /* Adjust this to control the border width */
+}
+
+.moving-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  padding: 2px; /* Adjust this to control the border width */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 25%,
+    rgba(208, 222, 33, 1) 50%,
+    rgba(79, 220, 74, 1) 75%,
+    rgba(63, 218, 216, 1) 100%
+  );
+  background-size: 400%;
+  z-index: 0;
+  border-radius: inherit;
+  animation: borderAnimation 4s linear infinite;
+}
+
+.moving-border > * {
+  position: relative;
+  z-index: 1;
+  background: black;
+  border-radius: inherit;
+  padding: 20px; /* Adjust this to control the padding inside the border */
+}
